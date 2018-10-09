@@ -1,0 +1,40 @@
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  border-top: 1px solid #f4f4f4;
+}
+.table > thead > tr > th {
+  border-bottom: 2px solid #f4f4f4;
+}
+.table tr td .progress {
+  margin-top: 5px;
+}
+.table-bordereds {
+  border: 1px solid black;
+}
+.table-bordereds > thead > tr > th,
+.table-bordereds > tbody > tr > th,
+.table-bordereds > tfoot > tr > th,
+.table-bordereds > thead > tr > td,
+.table-bordereds > tbody > tr > td,
+.table-bordereds > tfoot > tr > td {
+  border: 1px solid black;
+}
+.table-bordereds > thead > tr > th,
+.table-bordereds > thead > tr > td {
+  border-bottom-width: 2px;
+}
+  .table {
+    border-collapse: collapse !important;
+  }
+  .table td,
+  .table th {
+    background-color: #fff !important;
+  }
+  .table-bordereds th,
+  .table-bordereds td {
+    border: 1px solid black !important;
+  }
