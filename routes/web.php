@@ -27,6 +27,7 @@ Auth::routes();
 Route::group(['middleware' => ['auth','revalidate']],function(){
 	//dashboard
 	Route::get('/', 'DashboardController@dashboard');
+	Route::get('/filter_pendapatanpertahun', 'DashboardController@filterPendapatanpertahun');
 	// pelayanan
 	Route::get('/pelayanan', 'PelayananController@getPelayanan');
 	Route::get('/getlayanan/{id}', 'PelayananController@singleLayanan');

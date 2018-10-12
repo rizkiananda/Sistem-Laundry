@@ -124,8 +124,8 @@
 				<div class="form-group">
 				    <label for="exampleFormControlSelect1">Jenis Paket</label>
 				    <select class="form-control" name="jenis_paket" id="exampleFormControlSelect1" required>
-				      @foreach($jenis_pakets as $jenis_paket)
 				      <option value="null">-- Pilih jenis paket --</option>
+				      @foreach($jenis_pakets as $jenis_paket)
 				      <option value="{{$jenis_paket->id}}">{{$jenis_paket->nama_paket}}</option>
 				      @endforeach
 				    </select>

@@ -30,19 +30,21 @@
           </li>
           @endif
 
-          @if(\Request::is('/pelayanan'))
-          <li class="treeview active">
-            <a href="{{url('/pelayanan')}}">
-               <i class="fas fa-concierge-bell"></i> Pelayanan
-            </a>
-          </li>
-          @else
+          @if(!Request::is('/pelayanan'))
           <li class="treeview">
             <a href="{{url('/pelayanan')}}">
                <i class="fas fa-concierge-bell"></i> Pelayanan
             </a>
           </li>
+          @else
+          <li class="treeview active">
+            <a href="{{url('/pelayanan')}}">
+               <i class="fas fa-concierge-bell"></i> Pelayanan
+            </a>
+          </li>
+         
           @endif
+
 
           @if(\Request::is('/daftarharga'))
           <li class="treeview active">

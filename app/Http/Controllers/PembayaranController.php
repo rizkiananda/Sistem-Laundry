@@ -10,6 +10,10 @@ use Jenssegers\Date\Date;
 
 class PembayaranController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function pembayaran($id){
     	$data_pembayaran = transaksi::where('id_rekap', $id)->first();
     	$transaksis = transaksi::where('id_rekap', $id)->get();

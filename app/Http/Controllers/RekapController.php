@@ -7,6 +7,10 @@ use App\Model\rekap;
 
 class RekapController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function laporanHariIni(){
     	$current_date = date('Y-m-d');
      	$rekaps = rekap::where([['status_laundry', 'selesai'],['tanggal_masuk', $current_date]])->get();

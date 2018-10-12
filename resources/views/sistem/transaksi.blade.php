@@ -174,8 +174,9 @@
 	            <div class="form-group">
 	                <label>Jenis Paket</label>
 	                <select class="form-control" id="jenis_paket" name="jenis_paket" onchange="clearharga()">
+	                   	<option value="null">-- Pilih jenis paket --</option>
 	                   	@foreach($jenis_pakets as $jenis_paket)
-					      <option value="null">-- Pilih jenis paket --</option>
+					      
 					      <option value="{{$jenis_paket->id}}">{{$jenis_paket->nama_paket}}</option>
 					    @endforeach
 	                </select>
@@ -279,8 +280,9 @@
 	            <div class="form-group">
 	                <label>Jenis Paket</label>
 	                <select class="form-control" id="jenis_paket2" name="jenis_paket" onchange="clearharga2()">
+	                   	 <option value="null">-- Pilih jenis paket --</option>
 	                   	@foreach($jenis_pakets as $jenis_paket)
-					      <option value="null">-- Pilih jenis paket --</option>
+					     
 					      <option value="{{$jenis_paket->id}}">{{$jenis_paket->nama_paket}}</option>
 					    @endforeach
 	                </select>

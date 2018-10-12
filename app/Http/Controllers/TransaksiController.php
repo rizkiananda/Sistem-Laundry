@@ -14,6 +14,10 @@ use App\Model\rekap;
 
 class TransaksiController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function transaksi(){
     	$pelanggans = pelanggan::all();
     	$layanan_kiloans = jenis_layanan::where([['id_jenis_laundry', 1],['status', 'aktif']])->get();

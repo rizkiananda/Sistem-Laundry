@@ -60,7 +60,7 @@
 									{{csrf_field()}}
 								    <input name="_method" type="hidden" value="PUT">
 								    <input type="text" name="id_antrian" id="id_antrian" value="{{$antrian->id}}" hidden>
-								    <li><a href="javascript::void(0)" id="ubahstatus">Selesai</a></li>
+								    <li style="text-align: center;"><a href="javascript::void(0)" id="ubahstatus">Selesai</a></li>
 								    </form>
 								  </ul>
 								</div>
@@ -98,7 +98,7 @@ $('#antrian').DataTable()
 	    var nama = $(e.currentTarget).attr('data-name');
 	    var tabel = $(e.currentTarget).attr('data-table');
 	    swal({
-	      title: 'Hapus',
+	      title: 'Peringatan',
 	      text: "Apakah anda yakin akan mengubah status laundry ini ? ",
 	      type: 'warning',
 	      showCancelButton: true,

@@ -7,6 +7,10 @@ use App\Model\rekap;
 
 class AntrianController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function antrian(){
     	$antrians = rekap::where('status_laundry', "proses")->get();
     	return view('sistem.antrian', ['antrians' => $antrians]);
